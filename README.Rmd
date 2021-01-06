@@ -1,12 +1,19 @@
+---
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 # targets-parameterized-bookdown
 
+
+
 ## Setup from targets-minimal
+To mimic a directory of input files, we'll split the example data into two chunks. 
 
-To mimic a directory of input files, we’ll split the example data into
-two chunks.
-
-``` r
+```{r, eval = FALSE}
 library(tidyverse)
 data <- read_csv('data/raw_data.csv')
 
