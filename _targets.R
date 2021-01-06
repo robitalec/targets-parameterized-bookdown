@@ -42,7 +42,7 @@ list(
         title = as.character(tar_name())
       ),
       output_file = as.character(tar_name()),
-      output_dir = 'md'
+      output_dir = 'chapters'
     ),
     pattern = map(hist, fit),
     format = 'file'
