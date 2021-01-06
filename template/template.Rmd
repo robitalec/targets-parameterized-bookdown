@@ -1,0 +1,23 @@
+---
+output:
+  github_document:
+    html_preview: false
+params:
+  histogram: NA
+  model: NA
+  title: NA
+---
+
+# `r params$title`
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+params$histogram
+```
+
+```{r}
+summary(params$model)
+```
