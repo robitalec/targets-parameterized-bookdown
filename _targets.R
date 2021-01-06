@@ -32,5 +32,20 @@ list(
 
   tar_file(template, 'template/template.Rmd'),
 
+  tar_target(
+    report,
+    rmarkdown::render(
+      template,
+      params = list(
+        histogram = hist,
+        model = fit,
+        title = as.character(tar_name())
+      ),
+      output_file = as.character(tar_name()),
+      output_dir = 'md'
+    ),
+    pattern = map(hist, fit),
+    format = 'file'
+  )
 
 )
