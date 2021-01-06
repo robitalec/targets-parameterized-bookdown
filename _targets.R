@@ -46,5 +46,12 @@ list(
       change_ext(inext = 'md', outext = 'Rmd'),
     pattern = map(hist, fit),
     format = 'file'
+  ),
+
+  tar_file(index, 'index.Rmd'),
+
+  tar_target(
+    book,
+    render_with_deps(index, report)
   )
 )
