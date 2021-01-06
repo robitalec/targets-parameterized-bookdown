@@ -1,0 +1,9 @@
+---
+author: "Alec L. Robitaille"
+date: "`r Sys.Date()`"
+output:
+  bookdown::gitbook: default
+documentclass: book
+---
+
+# targets-parameterized-bookdown
