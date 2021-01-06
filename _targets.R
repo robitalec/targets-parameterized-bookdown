@@ -3,7 +3,7 @@ library(tarchetypes)
 source("R/functions.R")
 options(tidyverse.quiet = TRUE)
 
-tar_option_set(packages = c('tidyverse'))
+tar_option_set(packages = c("tidyverse", "bookdown"))
 
 list(
   tar_target(
