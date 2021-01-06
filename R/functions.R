@@ -13,3 +13,14 @@ create_plot <- function(data) {
     geom_histogram(aes(x = Ozone), bins = 12) +
     theme_gray(24)
 }
+
+
+# Change extension from md to Rmd
+#  since (at the moment) bookdown ignores md files unless explicitly stated in
+#  rmd_files
+#  https://github.com/rstudio/bookdown/issues/956
+change_ext <- function(file, inext, outext) {
+  newfile <- gsub(inext, outext, file)
+  file.rename(file, newfile)
+  newfile
+}

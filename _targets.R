@@ -46,6 +46,13 @@ list(
     ),
     pattern = map(hist, fit),
     format = 'file'
+  ),
+
+  tar_target(
+    rename,
+    change_ext(file = report, inext = 'md', outext = 'Rmd'),
+    pattern = map(report),
+    format = 'file'
   )
 
 )
