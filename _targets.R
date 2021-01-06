@@ -42,17 +42,9 @@ list(
         title = as.character(tar_name())
       ),
       output_file = as.character(tar_name()),
-      output_dir = 'chapters'
-    ),
+      output_dir = 'chapters') %>%
+      change_ext(inext = 'md', outext = 'Rmd'),
     pattern = map(hist, fit),
     format = 'file'
-  ),
-
-  tar_target(
-    rename,
-    change_ext(file = report, inext = 'md', outext = 'Rmd'),
-    pattern = map(report),
-    format = 'file'
   )
-
 )
