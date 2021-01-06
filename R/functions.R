@@ -24,3 +24,9 @@ change_ext <- function(file, inext, outext) {
   file.rename(file, newfile)
   newfile
 }
+
+
+# Bookdown render, but with explicitly defined dependencies
+render_with_deps <- function(index, deps) {
+  bookdown::render_book(index)
+}
