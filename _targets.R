@@ -30,4 +30,7 @@ list(
     lm(Ozone ~ Wind + Temp, data),
     pattern = map(data)),
 
+  tar_file(template, 'template/template.Rmd'),
+
+
 )
