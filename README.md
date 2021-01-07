@@ -51,3 +51,4 @@ alternatively be set to an id from the data, etc.
 call `bookdown::render_book` and not `rmarkdown::render` (target: book). 
 Therefore, we need to track the `.Rmd` files in separate targets. 
 
+* You *may* need to use `pandoc` >= [2.11.2](https://pandoc.org/releases.html#pandoc-2.11.2-2020-11-19) when generating the github_documents (target: report) so ATX style headings are used by default.
