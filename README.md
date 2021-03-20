@@ -2,6 +2,9 @@
 
 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4624556.svg)](https://doi.org/10.5281/zenodo.4624556)
+
+
 Example repository for rendering a bookdown book, compiling parameterized
 Rmarkdown documents, using the [targets](https://github.com/wlandau/targets)
 package.
